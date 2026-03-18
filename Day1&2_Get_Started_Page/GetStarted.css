@@ -10,7 +10,7 @@ body{
     height: 100vh;
 }
 .right{
-     background-image: url(./images/GetStarted_1.jpg);
+     background-image: url(../images/GetStarted_1.jpg);
     width: 65vw;
     height: 100vh;
     background-size: cover;
@@ -43,18 +43,25 @@ button {
     font-family:'Nunito', sans-serif;
     border-radius:25px;
 }
-button:hover{
-    background-color: rgb(245, 186, 186);
+/*button:hover{
+    background-color: rgb(97, 110, 226);
     color:black;
     font-weight: bold;
-}
+}*/
+
 .signup{
     background-color: rgb(71, 110, 174);
     color: white;
     border-style: none;
 }
+.signup:hover {
+  background-color: rgb(50, 85, 150); 
+}
 .login{
     background-color: rgb(72, 179, 175);
     color:white;
     border-style: none;
+}
+.login:hover {
+  background-color: rgb(50, 150, 145);
 }
