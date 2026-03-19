@@ -81,13 +81,16 @@ input:focus{
 }
 
 #account {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px auto 5px auto;
     font-size: large;
-    margin: 10px;
     padding: 7px;
     text-align: center;
     color: rgb(12, 120, 116);
-    font-size: large;
     font-weight: bold;
+    text-decoration: none;
 
 }
 #account:hover{

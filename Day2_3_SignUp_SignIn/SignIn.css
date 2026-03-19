@@ -158,67 +158,18 @@ hr {
     color: rgb(16, 158, 154);
     background-color: rgb(246, 255, 153);
     border-radius: 7px;
-    height: 36px;
+    height: 46px;
     width: 45%;
     text-align: center;
     font-size: larger;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
 #create:hover{
      background-color: rgb(240, 251, 118);
 }
 
-footer {
-    height: 200px;
-    background-color: white;
-    color: rgb(141, 139, 139);
-    margin-top: 30px;
-    padding-left: 300px;
-    padding-right: 300px;
-}
-
-.footer1 {
-    font-size: medium;
-    padding-bottom: 5px;
-}
-
-.footer2 {
-    margin-top: 20px;
-    padding-bottom: 30px;
-}
-
-.footer1 span,
-.footer2 span {
-    margin-right: 12px;
-    /* Adds horizontal spacing between footer items */
-    display: inline-block;
-    line-height: 1.8;
-    /* vertical spacing */
-}
-
-.footer1,
-.footer2 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer1 span:hover{
-    text-decoration: underline;
-    text-decoration-color:  rgb(141, 139, 139);
-
-}
-.footer2 span:hover {
-    text-decoration: underline;
-    text-decoration-color:  rgb(141, 139, 139);
-}
-
-.footer3 {
-    padding: 7px;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    font-size: small;
-}
 
 @media only screen and (max-width: 853px) {
   /* CSS rules for screens 853px or smaller */

@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(184, 226, 174);
+    background-color:rgb(128, 203, 196);
     font-family: 'Nunito', sans-serif;
     text-align: center;
     justify-content: center;
@@ -26,6 +26,16 @@ body{
 }
 .tagline{
     font-style: italic;
+    color: rgb(37, 68, 124); 
+}
+#study{
+    color:  rgb(37, 68, 124); 
+    font-size: xx-large;
+    font-weight: 900;
+    text-shadow: 3px 3px 5px rgb(72, 179, 175);
+}
+h3{
+    color: rgb(37, 68, 124); 
 }
 
 .box1 {

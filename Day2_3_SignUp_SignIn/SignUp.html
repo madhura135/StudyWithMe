@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyWithMe-login</title>
-    <link rel="stylesheet" href="SignIn.css">
+    <title>StudyWithMe-SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
     <link rel="stylesheet" href="GetStarted.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,11 @@
         </div>
         <div class="form">
             <div class="white">
+                <div id="name">
+                    <form action="post">
+                        <input type="text" name="text" placeholder="Name" autofocus>
+                    </form>
+                </div>
                 <div id="email">
                     <form action="post">
                         <input type="email" name="email" placeholder="Email address or phone number" autofocus>
@@ -37,13 +42,13 @@
                         <input type="password" name="password" placeholder="Password">
                     </form>
                 </div>
-                <div id="login">
-                    <button>Log in</button>
+                <div id="signup">
+                    <button>Sign Up</button>
                 </div>
-                <div id="forgot">Forgotten password?</div>
+                <a href="./SignIn.html" id="account">Have account? Please Log In!</a>
                 <hr>
-                <div id="create">Create new account</div>
-
+                <div id="access">Access with Google</div>
+                    
             </div>
 
 
