@@ -1,46 +1,46 @@
 body{
-    background-color:rgb(245, 186, 186);
+    background-color:  rgb(72, 179, 175);
     font-family: 'Nunito', sans-serif;
     text-align: center;
     justify-content: center;
     margin: 0;
 }
-.container{
-    display: flex;
-    height: 100vh;
-}
-.right{
-     background-image: url(../images/forgot2.jpg);
+/*.right{
+   
+    background-color: rgb(71, 110, 174);
     width: 65vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
-}
-.left{
-    display: flex;
-    flex-direction: column;
+}*/
+.Parent-box{
+    background-color:white;
     justify-content: center;
     align-items: center;
     width: 35vw;
-    padding: 20px;
+    padding: 30px;
+    margin:5rem 29rem 40rem 29rem;  
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+  
 #ForgotPass{
     color:  rgb(37, 68, 124); 
     font-size: xx-large;
     font-weight: 900;
-    text-shadow: 3px 3px 5px rgb(72, 179, 175);
+    /*text-shadow: 3px 3px 5px rgb(72, 179, 175);*/
 }
 h3{
     color: rgb(37, 68, 124); 
 }
 
-.box1 {
+.child-box {
     width: 100%;
     max-width: 350px;
     padding: 20px;
-    background-color: rgb(255, 237, 199);
     border-radius: 20px;
+    margin: 1rem 0 1rem 5rem;
 }
 button {
     width: 100%;
@@ -49,12 +49,13 @@ button {
     font-size: large;
     font-family:'Nunito', sans-serif;
     border-radius:25px;
+    color: white;
+    padding: 12px;
+    border: none;
+    transition: 0.3s;
 }
-/*button:hover{
-    background-color: rgb(97, 110, 226);
-    color:black;
-    font-weight: bold;
-}*/
+
+ 
 
 .signup{
     background-color: rgb(71, 110, 174);
@@ -74,19 +75,20 @@ button {
   background-color: rgb(50, 150, 145);
 }
 
+
 input {
     height:40px;
     width: 100%;
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
     font-size:medium;
-    border: 1px solid rgb(134, 133, 133);
-    border-radius: 7px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     box-sizing: border-box;
 }
 input:focus{
     caret-color: rgb(16, 158, 154);
     outline: none;
-    border-color: white;
+    border-color:#4CAF50;
     box-shadow: 0 0 2px 1.5px   rgb(15, 153, 148); /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
 }

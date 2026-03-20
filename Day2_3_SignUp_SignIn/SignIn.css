@@ -15,7 +15,7 @@ HSL	hsl(221, 88%, 52%)*/
 
 main {
     height: 100vh;
-    background-image:url(../images/Login1.jpg);
+    background-color: rgb(167, 227, 153);
     display: grid;
     grid-template-areas: "logo form";
     justify-content: center;
