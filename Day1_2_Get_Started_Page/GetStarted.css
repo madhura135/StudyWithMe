@@ -5,10 +5,23 @@ body {
     justify-content: center;
     margin: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.left,
+.right,
+.box1,
+button {
+    transition: all 0.3s ease;
+}
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .left {
@@ -45,6 +58,9 @@ h3 {
 }
 
 .box1 {
+    width: 100%;
+    max-width: 320px;
+
     background: var(--card);
     padding: 28px;
     border-radius: 20px;
@@ -53,7 +69,7 @@ h3 {
 }
 
 button {
-    width: 100%;
+    width: 100%;   /* already perfect */
     height: 45px;
     margin: 10px 0;
 
@@ -87,12 +103,7 @@ button {
 
 /* For mobile - width range 320px – 480px */
 @media (min-width:320px) and (max-width:480px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
+   
     body {
         line-height: 1.2;
     }
@@ -101,8 +112,12 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        width: 90vw;
+        align-items: center;
+        /* change this */
+        width: 100%;
+        /* change this */
+        height: auto;
+        /* ADD THIS LINE */
     }
 
     #study {
@@ -122,20 +137,12 @@ button {
         /* display: inline; */
     }
 
-    /* .left {
-        background-image: url(../images/GetStarted_1.jpg);
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    } */
-
     .left {
         background-image: url(../images/GetStarted_1.jpg);
         width: 100%;
 
         /* KEY FIX */
-        height:377px;
+        height: 377px;
         /* you can adjust: 180px – 260px */
 
         background-size: cover;
@@ -161,16 +168,21 @@ button {
     }
 
     .box1 {
-        width: 10rem;
+        /* width: 10rem; */
         background: var(--card);
         padding: 9px;
         border-radius: 5px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
         background-color: #ffffff;
+
+        transition: all 0.6s ease;
+        /* slower on mobile */
+
     }
 
+
     button {
-        width: 10em;
+        /* width: 10em; */
 
         margin: 5px 0;
         font-size: small;
@@ -183,8 +195,182 @@ button {
 
 /* For Large mobile small tablets - width range 481px – 768px */
 
+@media (min-width:481px) and (max-width:768px) {
+   
+
+    body {
+        line-height: 1.2;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* change this */
+        width: 100%;
+        /* change this */
+        height: auto;
+        /* ADD THIS LINE */
+    }
+
+    #study {
+        margin: 0 8px 6px 8px;
+        color: rgb(37, 68, 124);
+        font-size: x-large;
+        font-weight: 900;
+        text-shadow: 3px 3px 5px rgb(72, 179, 175);
+    }
+
+    .tagline {
+        font-style: italic;
+        color: rgb(37, 68, 124);
+        font-size: medium;
+        font-weight: 300;
+        margin: 0 5px 0 5px;
+        /* display: inline; */
+    }
+
+    .left {
+        background-image: url(../images/GetStarted_1.jpg);
+        width: 100%;
+
+        /* KEY FIX */
+        height: 377px;
+        /* you can adjust: 180px – 260px */
+
+        background-size: cover;
+        background-position: right center;
+        /* keeps girl visible */
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    h3 {
+        /* display: inline; */
+        margin: 5px 10px 5px 10px;
+        font-size: medium;
+    }
+
+    .box1 {
+        /* width: 13rem; */
+        background: var(--card);
+        padding: 9px;
+        border-radius: 5px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        background-color: #ffffff;
+    }
+
+    button {
+        /* width: 10em; */
+
+        margin: 5px 0;
+        font-size: small;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 10px;
+    }
+}
+
+
 /* For tablets or ipads- width range 769px – 1024px */
 
+@media (min-width:769px) and (max-width:1024px) {
+   
+
+    body {
+        line-height: 1.2;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* change this */
+        width: 100%;
+        /* change this */
+        height: auto;
+        /* ADD THIS LINE */
+    }
+
+    #study {
+        margin: 0 8px 6px 8px;
+        color: rgb(37, 68, 124);
+        font-size: xx-large;
+        font-weight: 900;
+        text-shadow: 3px 3px 5px rgb(72, 179, 175);
+    }
+
+    .tagline {
+        font-style: italic;
+        color: rgb(37, 68, 124);
+        font-size: large;
+        font-weight: 300;
+        margin: 0 5px 0 5px;
+        /* display: inline; */
+    }
+
+    .left {
+        background-image: url(../images/GetStarted_1.jpg);
+        width: 100%;
+
+        /* KEY FIX */
+        height: 377px;
+        /* you can adjust: 180px – 260px */
+
+        background-size: cover;
+        background-position: right center;
+        /* keeps girl visible */
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    h3 {
+        /* display: inline; */
+        margin: 5px 10px 5px 10px;
+        font-size: large;
+    }
+
+    .box1 {
+        /* width: 15rem; */
+        background: var(--card);
+        padding: 9px;
+        border-radius: 5px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        background-color: #ffffff;
+    }
+
+    button {
+        /* width: 13em; */
+        margin: 5px 0;
+        font-size: medium;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 10px;
+    }
+
+
+}
+
+
 /* For most laptops and small desktops - width range 1025px – 1440px */
+
 
 /* For big monitor and ultra wide screens - width range 1441px and above */

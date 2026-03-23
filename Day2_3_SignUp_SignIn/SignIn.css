@@ -11,7 +11,7 @@ body {
 
 main {
     height: 100vh;
-    background-color: rgb(167, 227, 153);
+    background-color: #FFF7FB;
     display: grid;
     grid-template-areas: "logo form";
     justify-content: center;
@@ -58,7 +58,7 @@ main {
 .white {
     height:560px;
     width: 530px;
-    background-color:rgb(128, 203, 196);
+    background-color:#FFFFFF;
     border-style: none;
     border-radius: 15px;
     margin: 50px;
