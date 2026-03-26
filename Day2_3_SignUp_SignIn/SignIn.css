@@ -1,149 +1,250 @@
+/* Reset */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/* Full page setup */
 body {
-    font-family:'Nunito',sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    /* background-color: #E6F4F1; */
+    background-color: #4E9F9B;
+    height: 100vh;
 }
 
 
-main {
-    height: 100vh;
-    background-color: #FFF7FB;
-    display: grid;
-    grid-template-areas: "logo form";
+/* =========================
+   MAIN LAYOUT (LEFT + RIGHT)
+========================= */
+.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    /* center content nicely */
     justify-content: center;
     align-items: center;
-    padding-right: 30px;
-    padding-bottom: 80px;
-   
+
+    height: 100%;
 }
 
-.form {
-    padding-bottom: 7px;
+
+/* =========================
+   LEFT SIDE → GRID (IMAGES)
+========================= */
+.grid-container {
+    width: 50vw;
+
+    display: grid;
+
+    /* clean responsive grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.line2 {
-    font-size: large;
-    display: inline-block;
-    padding-left: 90px;
-    padding-top: 0;
-    color: black;
+
+/* =========================
+   POLAROID CARD
+========================= */
+.poster {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+    /* shadow for polaroid feel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    /* IMPORTANT: remove fixed width */
+    width: 100%;
+
+    /* smooth animation */
+    transition: transform 0.3s ease;
+}
+
+
+/* ❌ REMOVED THIS (was wrong)
+.poster, .id1, .id2... → unnecessary + conflicting
+*/
+
+
+/* =========================
+   IMAGE INSIDE CARD
+========================= */
+.poster img {
+    width: 100%;
+    height: 200px;
+
+    /* prevents stretching */
+    object-fit: cover;
+
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   TEXT BELOW IMAGE
+========================= */
+.poster p {
+    margin-top: 10px;
     text-align: center;
-    justify-content: center;
+
+    /* cute handwritten feel */
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
 }
-.line2 b:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+
+
+/* =========================
+   POLAROID ROTATION EFFECT
+========================= */
+.poster:nth-child(odd) {
+    transform: rotate(-3deg);
 }
-.logo {
+
+.poster:nth-child(even) {
+    transform: rotate(3deg);
+}
+
+
+/* =========================
+   HOVER EFFECT (IMPORTANT)
+========================= */
+.poster:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+
+/* =========================
+   RIGHT SIDE → FORM
+========================= */
+.form {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    /* reduced gap between logo/line1 and white box */
-    transform: translateY(-50px);
-    /* move logo section upward */
+    justify-content: center;
+    align-items: center;
 }
 
-.logo img {
-    height: 170px;
-    width: 290px;
-    margin-bottom: 5px;
-    /* reduce space between image and line1 */
+#study {
+    color: rgb(19, 42, 84);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 5px 4px 7px rgb(138, 202, 200);
+}
+ .tagline {
+        font-style: italic;
+        color: rgb(9, 27, 61);
+        font-size: medium;
+        font-weight: 500;
+        margin: 0 5px 0 5px;
+        /* display: inline; */
 }
 
+
+/* LOGIN BOX */
 .white {
-    height:560px;
-    width: 530px;
-    background-color:#FFFFFF;
-    border-style: none;
-    border-radius: 15px;
-    margin: 50px;
-    padding: 27px;
-    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    /* soft shadow */
     box-shadow: 2px 1px 10px 5px rgb(225, 224, 224);
-    /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
 }
 
+
+/* =========================
+   INPUT FIELDS
+========================= */
 input {
-    height: 66px;
+    height: 2.5em;
     width: 100%;
     margin: 10px 0;
     padding: 10px;
-    font-size: larger;
-    border: 1px solid rgb(134, 133, 133);
-    border-radius: 7px;
-    box-sizing: border-box;
+    font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
-input:focus{
-    caret-color: rgb(16, 158, 154);
+
+
+/* focus effect */
+input:focus {
     outline: none;
     border-color: white;
-    box-shadow: 0 0 2px 1.5px   rgb(15, 153, 148); /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+    box-shadow: 0 0 1px 1.5px rgb(233, 240, 242);
 }
 
-#login button {
-    height: 60px;
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+.login-btn {
     width: 100%;
-    margin: 15px auto;
-    padding: 10px 0px 10px 10px;
-    /*top right bottom left*/
-    font-size: x-large;
+    margin: 15px 0;
+    padding: 10px;
+
+    font-size: 18px;
     font-weight: bold;
+
     border-radius: 7px;
     color: white;
-    background-color:  rgb(16, 158, 154);
-    border-style: none;
-}
-#login button:hover{
-    background-color: rgb(12, 120, 116);
-    border-style: none;
-    border-radius: 7px;
-    color: white;  
+    background-color: rgb(19, 42, 84);
+
+    border: none;
+    cursor: pointer;
 }
 
-#forgot {
-    font-size: large;
-    margin: 10px;
-    padding: 7px;
+.login-btn:hover {
+    background-color: rgb(13, 31, 63);
+}
+
+
+/* =========================
+   LINKS
+========================= */
+.forgot {
+    display: block;
     text-align: center;
+    margin: 10px 0;
     color: white;
+    text-decoration: none;
 }
-#forgot:hover{
+
+.forgot:hover {
     text-decoration: underline;
-    text-decoration-color:rgb(24, 119, 242) ;
 }
+
 
 hr {
     border: none;
     height: 1px;
     background-color: #ddd;
-    width: 100%;
-    margin: 20px auto;
+    margin: 20px 0;
 }
 
-#create {
+
+
+.create-account {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 5px auto;
-    /*top right bottom left*/
-    padding: 15px;
-    color: rgb(16, 158, 154);
-    background-color: white
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
     border-radius: 7px;
-    height: 46px;
-    width: 45%;
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
+    border: none;
     cursor: pointer;
+    font-size: 18px;
+    font-weight:600;
     text-decoration: none;
-}
-#create:hover{
-     background-color: rgb(240, 251, 118);
+    background-color: rgb(19, 42, 84);
+    color: white;
 }
 
+
+.create-account:hover {
+    background-color: rgb(9, 26, 57);
+}

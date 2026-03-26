@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyWithMe-login</title>
+
+    <title>StudyWithMe - Login</title>
+
+    <!-- Your CSS file -->
     <link rel="stylesheet" href="SignIn.css">
-    <link rel="stylesheet" href="GetStarted.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Caveat&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Main container (2 sections: left = images, right = form) -->
     <main class="columns">
-        <!--<div class="logo">
-            <img src="Facebook-Logo-2019.png" class="logo-img">
-            <div class="line1">
-                Stay consistent. Stay accountable.
-                Study together, grow together.<br>-->
 
+        <!-- 🔹 LEFT SIDE → Polaroid Image Grid -->
+        <div class="grid-container">
+
+            <!-- Each "poster" is a polaroid card -->
+            <!-- Image + caption (your app message) -->
+
+            <div class="poster">
+                <img src="../images/Log_1.jpg" alt="Studying Cat">
+                <p>Stay focused & study smart ✨</p>
             </div>
+
+            <div class="poster">
+                <img src="../images/track3.jpg" alt="Progress Tracking">
+                <p>Track your daily goals 📊</p>
+            </div>
+
+            <div class="poster">
+                <img src="../images/group.jpg" alt="Community">
+                <p>Study together, grow together 🤝</p>
+            </div>
+
+            <div class="poster">
+                <img src="../images/Log_6.jpg" alt="Consistency">
+                <p>Consistency builds success 💪</p>
+            </div>
+
         </div>
+
+        <!-- 🔹 RIGHT SIDE → Login Form -->
         <div class="form">
-            <div class="white">
-                <div id="email">
-                    <form action="post">
-                        <input type="email" name="email" placeholder="Email address or phone number" autofocus>
-                    </form>
+            
+            <div class="login-box">
+                <p id="study">StudyWithMe</p>
+                <div class="tagline">
+                <p>Stay consistent. Study together. Grow daily.<p>
                 </div>
-                <div id="password">
-                    <form action="post">
-                        <input type="password" name="password" placeholder="Password">
-                    </form>
-                </div>
-                <div id="login">
-                    <button>Log in</button>
-                </div>
-                <a href="./Forgot.html" id="forgot">Forgot password?</a>
+                <!-- Email input -->
+                <input type="email" placeholder="Email address or phone number" autofocus>
+
+                <!-- Password input -->
+                <input type="password" placeholder="Password">
+
+                <!-- Login button -->
+                <button class="login-btn">Log in</button>
+
+                <!-- Forgot password -->
+                <a href="./Forgot.html" class="forgot">Forgot password?</a>
+
                 <hr>
-                <a href="./SignUp.html" id="create">Create new account</a>
+
+                <!-- Create account -->
+                <a href="./SignUp.html" class="create-account">Create new account</a>
 
             </div>
 
-
-
         </div>
-
-
 
     </main>
 
 </body>
-
 </html>
