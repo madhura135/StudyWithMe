@@ -41,20 +41,16 @@ button {
     padding: 20px;
 }
 
-.tagline {
-    font-style: italic;
-    color: rgb(37, 68, 124);
-}
-
-#study {
-    color: rgb(37, 68, 124);
-    font-size: xx-large;
-    font-weight: 900;
-    text-shadow: 3px 3px 5px rgb(72, 179, 175);
+#study img {
+    width:300px;
+    height:130px;
+    border-radius:30px;
+   margin: 20px; 
 }
 
 h3 {
     color: rgb(37, 68, 124);
+    margin: 20px;
 }
 
 .box1 {
@@ -80,13 +76,13 @@ button {
 
 
 .signup {
-    background-color: rgb(71, 110, 174);
+    background-color: rgb(54, 104, 183);
     color: white;
     border-style: none;
 }
 
 .signup:hover {
-    background-color: rgb(50, 85, 150);
+    background-color: rgb(41, 75, 138);
 }
 
 .login {
@@ -120,22 +116,12 @@ button {
         /* ADD THIS LINE */
     }
 
-    #study {
-        margin: 0 8px 6px 8px;
-        color: rgb(37, 68, 124);
-        font-size: x-large;
-        font-weight: 900;
-        text-shadow: 3px 3px 5px rgb(72, 179, 175);
-    }
-
-    .tagline {
-        font-style: italic;
-        color: rgb(37, 68, 124);
-        font-size: medium;
-        font-weight: 300;
-        margin: 0 5px 0 5px;
-        /* display: inline; */
-    }
+    #study img {
+    width:180px;
+    height:70px;
+    border-radius:18px;
+   margin: 20px; 
+}
 
     .left {
         background-image: url(../images/GetStarted_1.jpg);
@@ -213,23 +199,12 @@ button {
         height: auto;
         /* ADD THIS LINE */
     }
-
-    #study {
-        margin: 0 8px 6px 8px;
-        color: rgb(37, 68, 124);
-        font-size: x-large;
-        font-weight: 900;
-        text-shadow: 3px 3px 5px rgb(72, 179, 175);
-    }
-
-    .tagline {
-        font-style: italic;
-        color: rgb(37, 68, 124);
-        font-size: medium;
-        font-weight: 300;
-        margin: 0 5px 0 5px;
-        /* display: inline; */
-    }
+#study img {
+    width:190px;
+    height:75px;
+    border-radius:19px;
+   margin: 20px; 
+}
 
     .left {
         background-image: url(../images/GetStarted_1.jpg);
@@ -302,22 +277,13 @@ button {
         /* ADD THIS LINE */
     }
 
-    #study {
-        margin: 0 8px 6px 8px;
-        color: rgb(37, 68, 124);
-        font-size: xx-large;
-        font-weight: 900;
-        text-shadow: 3px 3px 5px rgb(72, 179, 175);
-    }
+    #study img {
+    width:200px;
+    height:80px;
+    border-radius:20px;
+   margin: 20px; 
+}
 
-    .tagline {
-        font-style: italic;
-        color: rgb(37, 68, 124);
-        font-size: large;
-        font-weight: 300;
-        margin: 0 5px 0 5px;
-        /* display: inline; */
-    }
 
     .left {
         background-image: url(../images/GetStarted_1.jpg);

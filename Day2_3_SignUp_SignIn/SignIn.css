@@ -8,7 +8,6 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #E6F4F1; */
     background-color: #4E9F9B;
     height: 100vh;
 }
@@ -19,10 +18,8 @@ body {
 ========================= */
 .columns {
     display: flex;
-    flex-direction: row;
     gap: 40px;
 
-    /* center content nicely */
     justify-content: center;
     align-items: center;
 
@@ -35,70 +32,54 @@ body {
 ========================= */
 .grid-container {
     width: 50vw;
-
     display: grid;
-
-    /* clean responsive grid */
     grid-template-columns: repeat(2, 1fr);
+    /* as we have only specified columns , css automatically takes rows as per need and only confirm columns*/
     gap: 20px;
 }
-
 
 /* =========================
    POLAROID CARD
 ========================= */
 .poster {
-    background-color: white;
+    background-color: rgb(248, 225, 96);
     padding: 10px;
     border-radius: 10px;
 
-    /* shadow for polaroid feel */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px rgba(249, 192, 3, 0.921);
 
-    /* IMPORTANT: remove fixed width */
     width: 100%;
-
-    /* smooth animation */
     transition: transform 0.3s ease;
 }
+/* This is the reason for poster width:100% */
+/* SCREEN (100vw)
+│
+├── grid-container (50vw)  👈 half screen
+│     │
+│     ├── grid column (1fr)
+│     │     │
+│     │     └── .poster (width: 100%)
+│     │           👉 fills THIS column fully
+│     │
+│     └── grid column (1fr) */
 
 
-/* ❌ REMOVED THIS (was wrong)
-.poster, .id1, .id2... → unnecessary + conflicting
-*/
 
-
-/* =========================
-   IMAGE INSIDE CARD
-========================= */
 .poster img {
     width: 100%;
     height: 200px;
-
-    /* prevents stretching */
     object-fit: cover;
-
     display: block;
     border-radius: 8px;
 }
 
-
-/* =========================
-   TEXT BELOW IMAGE
-========================= */
 .poster p {
     margin-top: 10px;
     text-align: center;
-
-    /* cute handwritten feel */
     font-family: 'Caveat', cursive;
-    font-size: 18px;
+    font-size: 22px;
 }
 
-
-/* =========================
-   POLAROID ROTATION EFFECT
-========================= */
 .poster:nth-child(odd) {
     transform: rotate(-3deg);
 }
@@ -107,10 +88,6 @@ body {
     transform: rotate(3deg);
 }
 
-
-/* =========================
-   HOVER EFFECT (IMPORTANT)
-========================= */
 .poster:hover {
     transform: scale(1.05) rotate(0deg);
 }
@@ -125,34 +102,31 @@ body {
     align-items: center;
 }
 
+
+/* =========================
+   LOGIN BOX (FIXED STRUCTURE)
+========================= */
+.login-box {
+    width: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
 #study {
-    color: rgb(19, 42, 84);
-    font-size: xx-large;
-    font-weight: bolder;
-    text-shadow: 5px 4px 7px rgb(138, 202, 200);
-}
- .tagline {
-        font-style: italic;
-        color: rgb(9, 27, 61);
-        font-size: medium;
-        font-weight: 500;
-        margin: 0 5px 0 5px;
-        /* display: inline; */
+    margin-bottom: 25px;
 }
 
-
-/* LOGIN BOX */
-.white {
-    height: 400px;
-    width: 300px;
-
-    background-color: #FFFFFF;
-    border-radius: 10px;
-
-    padding: 20px;
-
-    /* soft shadow */
-    box-shadow: 2px 1px 10px 5px rgb(225, 224, 224);
+#study img {
+    width: 260px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
 }
 
 
@@ -160,17 +134,16 @@ body {
    INPUT FIELDS
 ========================= */
 input {
-    height: 2.5em;
     width: 100%;
+    height: 2.7em;
     margin: 10px 0;
     padding: 10px;
     font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-
-/* focus effect */
 input:focus {
     outline: none;
     border-color: white;
@@ -187,7 +160,7 @@ input:focus {
     padding: 10px;
 
     font-size: 18px;
-    font-weight: bold;
+    font-weight:500;
 
     border-radius: 7px;
     color: white;
@@ -206,7 +179,6 @@ input:focus {
    LINKS
 ========================= */
 .forgot {
-    display: block;
     text-align: center;
     margin: 10px 0;
     color: white;
@@ -223,28 +195,63 @@ hr {
     height: 1px;
     background-color: #ddd;
     margin: 20px 0;
+    width: 100%;
 }
 
 
-
+/* =========================
+   CREATE ACCOUNT BUTTON
+========================= */
 .create-account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
+    width: 100%;
     padding: 10px;
-    width: 60%;
+
     border-radius: 7px;
     border: none;
     cursor: pointer;
+
     font-size: 18px;
-    font-weight:600;
+    font-weight: 500;
+
+    text-align: center;
     text-decoration: none;
+
     background-color: rgb(19, 42, 84);
     color: white;
 }
 
-
 .create-account:hover {
     background-color: rgb(9, 26, 57);
 }
+
+
+/*------------------------------------------------------------------------------------*/
+/* Media queries here */
+
+/* For mobile - width range 320px – 480px */
+@media (min-width:320px) and (max-width:480px) {}
+   
+ 
+
+/* For Large mobile small tablets - width range 481px – 768px */
+
+@media (min-width:481px) and (max-width:768px) {}
+   
+
+  
+
+/* For tablets or ipads- width range 769px – 1024px */
+
+@media (min-width:769px) and (max-width:1024px) {}
+   
+
+
+
+
+
+/* For most laptops and small desktops - width range 1025px – 1440px */
+
+
+/* For big monitor and ultra wide screens - width range 1441px and above */
+
+
