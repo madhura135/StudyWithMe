@@ -12,6 +12,12 @@ body {
     height: 100vh;
 }
 
+nav{
+    background-color: #438884;
+    color: White;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
 
 /* =========================
    MAIN LAYOUT (LEFT + RIGHT)
@@ -43,7 +49,7 @@ body {
 ========================= */
 .poster {
     background-color: rgb(248, 225, 96);
-    padding: 10px;
+    padding:6px;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 4px 5px rgba(249, 192, 3, 0.921);
@@ -74,7 +80,7 @@ body {
 } 
 
 .poster p {
-    margin-top: 10px;
+    margin-top:6px;
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size:32px;
