@@ -11,7 +11,9 @@ body {
     background-color: #4E9F9B;
     height: 100vh;
 }
-
+nav{
+     background-color: rgb(248, 225, 96);
+}
 
 /* =========================
    MAIN LAYOUT (LEFT + RIGHT)
@@ -200,9 +202,9 @@ hr {
 
 
 /* =========================
-   CREATE ACCOUNT BUTTON
+   CREATE ACCOUNT BUTTON-- Access with Google btn
 ========================= */
-.create-account {
+.access-with-google{
     width: 100%;
     padding: 10px;
 
@@ -220,7 +222,7 @@ hr {
     color: white;
 }
 
-.create-account:hover {
+.access-with-google:hover {
     background-color: rgb(9, 26, 57);
 }
 
