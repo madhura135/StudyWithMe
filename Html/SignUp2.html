@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sign In-StudyWithMe</title>
+    <title>Sign Up-StudyWithMe</title>
 
     <!-- Your CSS file -->
-    <link rel="stylesheet" href="SignIn.css">
+    <link rel="stylesheet" href="../styles/SignUp2.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +16,9 @@
 </head>
 
 <body>
-   
+     <nav>🔥 5,000+ students staying consistent daily.
+🚀 Upgrade to premium at just ₹69/month.
+🏆 Track your streak. Beat distractions.</nav>
 
     <!-- Main container (2 sections: left = images, right = form) -->
     <main class="columns">
@@ -28,23 +29,37 @@
             <!-- Each "poster" is a polaroid card -->
             <!-- Image + caption (your app message) -->
 
-             <div class="poster">
-                 <p>Don’t study alone anymore !!</p>
-            <img src="../images/group4.png" alt="motivation">
-              
+            <div class="poster">
+                <img src="../Asset/Log_1.jpg" alt="Studying Cat">
+                <p>Stay focused & study smart ✨</p>
             </div>
-              <!-- <p>Stay focused & study smart </p> -->
-     
+
+            <div class="poster">
+                <img src="../Asset/track3.jpg" alt="Progress Tracking">
+                <p>Track your daily goals 📊</p>
+            </div>
+
+            <div class="poster">
+                <img src="../Asset/group.jpg" alt="Community">
+                <p>Study together, grow together 🤝</p>
+            </div>
+
+            <div class="poster">
+                <img src="../Asset/Log_6.jpg" alt="Consistency">
+                <p>Consistency builds success 💪</p>
+            </div>
+
         </div>
+
         <!-- 🔹 RIGHT SIDE → Login Form -->
         <div class="form">
-
+            
             <div class="login-box">
-                <div id="study"><img src="../images/LogoFinal.png"></div>
+                <div id="study"><img src="../Asset/LogoFinal.png"></div>
 
                 <!-- UserName input -->
                 <input type="text" name="text" placeholder="Name" autofocus>
-
+                   
                 <!-- Email input -->
                 <input type="email" placeholder="Email address or phone number" autofocus required>
 
@@ -53,15 +68,15 @@
                 <!-- <span id="togglePassword">Show</span> TO BE CHECKED-->
 
                 <!-- Login button -->
-                <button class="login-btn">Sign In</button>
+                <button class="login-btn">Sign Up</button>
 
                 <!-- Forgot password -->
-                <a href="./Forgot.html" class="forgot">Forgot Password?</a>
+                <a href="../Html/SignIn.html" class="forgot">Already have an account?Log in</a>
 
                 <hr>
 
                 <!-- Create account -->
-                <a href="./SignUp.html" class="create-account">Create new account</a>
+                <a href="#" class="access-with-google">Access with Google</a>
 
             </div>
 
@@ -70,5 +85,4 @@
     </main>
 
 </body>
-
 </html>
