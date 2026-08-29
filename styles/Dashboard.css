@@ -6,4 +6,37 @@ body{
     height: 100vh;
 }
 
+.grid-container{
+    display:grid;
+   /* border: 2px solid black; */
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #69ccc7;
+  height:30px;
+}
+
+.logo img {
+  /* height: 40px; /* Adjust this value to fit your navbar 
+  width: auto;  Keeps the correct image proportions */
+  display: block;
+  width:180px;
+height:45px;
+    border-radius:30px;
+   margin: 20px; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #1B2A4A;
+  text-decoration: none;
+}
