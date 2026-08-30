@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard-StudyWithMe</title>
     <link rel="stylesheet" href="../styles/Dashboard.css">
 </head>
-<body>
-   
-            <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="../Asset/LogoFinal.png" alt="Logo">
-            </a>
-            <ul class="nav-links">       
-                <li><a href="#">Dashboard</a></li>
-                <li class="dropdown">
-                    <a href="#">Challenges▾</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown">
-                            <a href="#">Set a Challenge▾</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">21 Days Challenge</a></li>
-                                <li><a href="#">75 Days Challenge</a></li>
-                                <li><a href="#">100 Days Challenge</a></li>
-                            </ul>
-                        </li>
-                   
-                        <li><a href="#">Leaderboard</a></li>
-                    </ul>
-                 </li>
-                <li><a href="#">Study Group</a></li>
-                <li class="dropdown"><a href="#">About▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">AI Quiz area</a></li>
-                <li><a href="#">Revision</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li class="dropdown"><a href="#">Profile▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">My Subscription</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-            </nav>
-         <div class="grid-container">
-            <div class="timer">
-                
-            </div>
-            <div class="bottom-cards">
-                <div class="bottom-card1">bottom-card1 Create Challenge</div>
-                <div class="bottom-card2">bottom-card2 Join Study Group</div>
-            </div>
-            <div class="right-sidebar">right-sidebar
-                <div> right-card-1->Streak</div>
-                <div> right-card-2->Goals completed</div>
-                <div> right-card-3->Time studied</div>
-                <div> right-card-4->Leaderboard</div>
-            </div>
-        </div>
 
-        <!--Dashboard jscript-->
-    
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="../Asset/LogoFinal.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#">Challenges</a>
+
+                <ul class="dropdown-menu">
+
+                    <li class="sub-dropdown">
+                        <a href="#">Set a Challenge</a>
+
+                        <ul class="sub-dropdown-menu">
+                            <li><a href="#">21 Days</a></li>
+                            <li><a href="#">75 Days</a></li>
+                            <li><a href="#">100 Days</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Leaderboard</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="#">Study Group</a></li>
+            <li class="dropdown"><a href="#">About</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AI Quiz area</a></li>
+            <li><a href="#">Revision</a></li>
+            <li><a href="#">
+                <img id="noti-icon" src="../Asset/bell.png" alt="bell">
+                </a>
+            </li>
+            <li class="dropdown"><a href="#">Profile</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">My Subscription</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="grid-container">
+        <div class="timer">
+
+        </div>
+        <div class="bottom-cards">
+            <div class="bottom-card1">bottom-card1 Create Challenge</div>
+            <div class="bottom-card2">bottom-card2 Join Study Group</div>
+        </div>
+        <div class="right-sidebar">right-sidebar
+            <div> right-card-1->Streak</div>
+            <div> right-card-2->Goals completed</div>
+            <div> right-card-3->Time studied</div>
+            <div> right-card-4->Leaderboard</div>
+        </div>
+    </div>
+
+    <!--Dashboard jscript-->
+
     <script src="../Javascript/app.js"></script>
     <script src="../Javascript/dashboard.js"></script>
     <script src="../Javascript/timer.js"></script>
     <script src="../Javascript/storage.js"></script>
 </body>
+
 </html>
