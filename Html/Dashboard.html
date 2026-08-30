@@ -14,17 +14,44 @@
             </a>
             <ul class="nav-links">       
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Challenges</a></li>
+                <li class="dropdown">
+                    <a href="#">Challenges▾</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a href="#">Set a Challenge▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">21 Days Challenge</a></li>
+                                <li><a href="#">75 Days Challenge</a></li>
+                                <li><a href="#">100 Days Challenge</a></li>
+                            </ul>
+                        </li>
+                   
+                        <li><a href="#">Leaderboard</a></li>
+                    </ul>
+                 </li>
                 <li><a href="#">Study Group</a></li>
-                <li><a href="#">About</a></li>
+                <li class="dropdown"><a href="#">About▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">AI Quiz area</a></li>
                 <li><a href="#">Revision</a></li>
                 <li><a href="#">Notifications</a></li>
-                <li><a href="#">Profile</a></li>
+                <li class="dropdown"><a href="#">Profile▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">My Subscription</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
             </ul>
             </nav>
          <div class="grid-container">
-            <div class="content">content-timer/stopwatch.Todays goal container</div>
+            <div class="timer">
+                
+            </div>
             <div class="bottom-cards">
                 <div class="bottom-card1">bottom-card1 Create Challenge</div>
                 <div class="bottom-card2">bottom-card2 Join Study Group</div>
@@ -38,10 +65,10 @@
         </div>
 
         <!--Dashboard jscript-->
-
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
+    
+    <script src="../Javascript/app.js"></script>
+    <script src="../Javascript/dashboard.js"></script>
+    <script src="../Javascript/timer.js"></script>
+    <script src="../Javascript/storage.js"></script>
 </body>
 </html>
